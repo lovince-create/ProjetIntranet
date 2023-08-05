@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/login.css">
+        <title>Page connexion</title>
+    </head>
+
+    <body>
+        <div class="box">
+            <form id="formulaire" method="POST" action="traitement.php">
+            	<img id="Dimage" src="IMAGES/lock.png" alt="locked">
+                <h1>Administration</h1><br><br>
+                <label for="nomUtilisateur"><b>Nom d'utilisateur</b></label><br>
+                <input type="text" name="nomUtilisateur" required><br><br>
+                <label for="motDePasse"><b>Mot de passe</b></label><br>
+                <input id="motDePasse" type="password" placeholder="" name="motDePasse" required><br><b id="invalide"></b><br>
+                <input id="code" type="hidden" value="2" name="code"/>
+                <button id="Klike" type="submit" class="button" onclick="Klik()">Se connecter</button><br>
+            	<i id="toggle" onclick="permuter()">S'inscrire</i>
+            </form>
+        </div>
+    </body>
+</html>
+<script type="text/javascript" src="JS/inscription.js"></script>

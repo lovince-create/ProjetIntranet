@@ -1,0 +1,60 @@
+:root {
+	--Dgreen: #1a8032;
+}
+body {
+	position: absolute;
+	right: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: rgb(203,212,211);
+	width: 100%;
+}
+
+#liste1 {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	top: -2vh;
+	left: 0;
+	width: 100vw;
+	height: 10vh;
+	border: 2px solid white;
+	list-style-type: none;
+	background-color: var(--Dgreen);
+}
+
+#liste2 {
+	position: absolute;
+	top: 70vh;
+	left: 0;
+	width: 100vw;
+	display: grid;
+	grid-template-columns: repeat(2,2fr);
+	grid-gap: 5vh;
+	list-style-type: none;
+	background-color: var(--Dgreen);
+}
+
+#liste2 li {
+	padding: 10%;
+}
+
+li {
+	font-size: 10pt;
+	margin: 0 10vw 0 10vw;
+}
+
+#img1 {
+	width: 40vw;
+}
+
+#img2 {
+	display: none;
+}
+   
+.entete {
+	position: absolute;
+	top: 20vh;
+}
