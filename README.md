@@ -33,4 +33,4 @@ Pwoje a vize kreye yon platfòm intranet pou lopital ki sitiye nan Pòtoprens, A
 - Fasilite aksè ak konsèy medikal a distans nan zòn ki lwen lopital la.
 - Pèmèt doktè yo sèvi ak teknoloji ak medsin avanse nan pratik yo.
 
-## Pwoje a ap mennen pa yon ekip eksperimen nan devlopman logisyèl, enjenye IT ak doktè ak moun ki gen ekspètiz nan administrasyon lopital. Li pral adopte yon apwòch itilizatè-òjante pou asire solisyon yo koresponn ak bese bezwen ak pou egzije itilizatè yo nan lopital la.
+## Pwoje a ap mennen pa yon ekip eksperimante nan devlopman logisyèl, enjenye IT ak patenarya ,kek etidyan nan medsin ak moun ki gen ekspètiz nan administrasyon lopital.
