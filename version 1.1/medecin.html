@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/medecin.css">
+    <title>Page administrateur</title>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <!-- Formulaire d'information du médecin -->
+            <h1>Médecin</h1>
+            <br>
+
+            <label for="ID_medecin"><b>Numéro d'identification</b></label>
+            <input type="number" name="ID_medecin" required>
+
+            <label for="Nom_medecin"><b>Nom du Médecin</b></label>
+            <input type="text" name="Nom" required>
+
+            <label for="Specialisation"><b>La spécialisation du Médecin</b></label>
+            <input type="text" name="specialisation" required>
+
+            <label for="Telephone_medecin"><b>Numéro de téléphone portable du médecin</b></label>
+            <input type="tel" name="Telephone_medecin" required>
+
+            <div class="action">
+                <a href="acceuil.html" class="bouton">Retour</a>
+                <button type="submit" class="bouton" name="enregistrer" value="envoyer">Enregistrer</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

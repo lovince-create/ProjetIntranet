@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="CSS/acceuil.css">
+        <script src="https://kit.fontawesome.com/16d512547d.js" crossorigin="anonymous"></script>
+        <script src="JS/style.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Acceuil</title>
+    </head>
+    <body>
+        <div class="box1">
+            <h2 id="dashboard">Tableau de bord</h2>
+            <form action="#">
+                <input  placeholder="Rechercher" type="search" name="search" id="search" >
+                <button type="submit" name="button"><i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i></button>
+            </form>
+            <div class="box2">
+                <img src="IMAGES/vector2.png" alt="docteur" id="vector">
+                <h4>Patient Recent</h4>
+                <a href="#">Voir plus</a>
+            </div>
+            <div class="menu">
+                <div class="home">
+                    <a href="#"><i class="fa-solid fa-house fa-2xl" style="color: #ffffff;"></i></a>
+                </div>
+                <div class="agenda">
+                    <a href="#"><i class="fa-solid fa-calendar-days fa-2xl" style="color: #ffffff;"></i></a>
+                </div>
+                <div class="user">
+                    <a href="#"><i class="fa-solid fa-user-plus fa-2xl" style="color: #ffffff;"></i></a>
+                </div>
+                <div class="log">
+                    <a href="index.html"><i class="fa-solid fa-right-from-bracket fa-2xl" style="color: #ffffff;"></i></a>
+                </div>
+            </div>
+            <div class="box4">
+                <div class="chart-container">
+                    <canvas id="patientChart"></canvas>
+                </div>
+            </div>
+            <div class="entete">
+                <img src="IMAGES/docteur.png" alt="medecin" class="docteur">
+                <h2>Bienvenue, <b>Dr. Joseph</b></h2>
+                <p>C'est un beau jour au travail</p>
+                <img src="IMAGES/dessin.png" alt="dessin" class="dessin">
+            </div>
+            <h5>Rapport</h5>
+            <div class="box6">
+                <div class="patient">
+                    <a href="#"><i class="fa-solid fa-user fa-2xl" style="color: #ffffff;"></i></a>
+                    <p>Patient</p>
+                </div>
+            </div>
+            <div class="box6">
+                <div class="consultation">
+                    <a href="#"><i class="fa-solid fa-user-check fa-2xl" style="color: #ffffff;"></i></a>
+                    <p>Examen</p>
+                </div>
+            </div>
+            <div class="box6">
+                <div class="medecin">
+                    <a href="#"><i class="fa-solid fa-stethoscope fa-2xl" style="color: #ffffff;"></i></a>
+                    <p>Medecin</p>
+                </div>
+            </div>
+            <div class="box6">
+                <div class="hospitalise">
+                    <a href="#"><i class="fa-solid fa-bed-pulse fa-2xl" style="color: #ffffff;"></i></a>
+                    <p>hospitalise</p>
+                </div>
+            </div>
+
+            <div class="box6">
+                <div id="border">
+                    <i class="fa-solid fa-plus fa-2xl" id="add" onclick="openmenu()"></i>
+                    <nav>
+                        <ul id="menu">
+                            <li><a href="patient.html">Patient</a></li>
+                            <li><a href="medecin.html">Medecin</a></li>
+                            <li><a href="visite.html">Rendez-vous</a></li>
+                            <li><a href="horaire.html">Horaire</a></li>
+                            <i class="fa-sharp fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                        </ul>                
+                    </nav>
+                </div>
+                
+            </div>
+            
+            <div class="box7">
+                <div id="calendar"></div>
+            </div>
+        </div>
+        <script>
+            function generateChartData() {
+                const weeklyData = [10, 15, 8, 20, 12, 18, 25];
+                return {
+                    labels: ['Semaine 1', 'Semaine 2', 'Semaine 3', 'Semaine 4', 'Semaine 5', 'Semaine 6', 'Semaine 7'],
+                    weeklyData: weeklyData,
+                };
+            }
+        
+            function renderChart() {
+                const data = generateChartData();
+        
+                const ctx = document.getElementById('patientChart').getContext('2d');
+                const patientChart = new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        labels: data.labels,
+                        datasets: [
+                            {
+                                label: 'Patients par Semaine',
+                                data: data.weeklyData,
+                                borderColor: '#f05076',
+                                borderWidth: 2,
+                                fill: false,
+                            },
+                        ],
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        scales: {
+                            x: {
+                                display: true,
+                                title: {
+                                    display: true,
+                                    text: '',
+                                    color: 'white',
+                                },
+                                ticks: {
+                                    color: 'white',
+                                },
+                            },
+                            y: {
+                                display: true,
+                                title: {
+                                    display: true,
+                                    text: 'Nombre de Patients',
+                                    color: 'white',
+                                },
+                                ticks: {
+                                    color: 'white',
+                                    beginAtZero: true,
+                                },
+                            },
+                        },
+                        plugins: {
+                            legend: {
+                                labels: {
+                                    color: 'white',
+                                },
+                            },
+                        },
+                    },
+                });
+            }
+        
+            renderChart();
+        </script>
+    </body>
+</html>
