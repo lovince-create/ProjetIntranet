@@ -1,0 +1,435 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+
+body
+{
+    background-color: rgb(203, 212, 211);
+    justify-content: center;
+    align-items: center;
+    height: max-content;  
+}
+
+.box1
+{
+    width: 93.5%;
+    height: 100vh;
+    background-color: #272c4c;
+    border-radius: 25px;
+    margin: 50px 50px;
+    border: 10px solid rgb(235, 240, 242);
+}
+
+.box1 .box2
+{
+    width: 80px;
+    height: 97.3vh;
+    background-color:#202344;
+    border-radius: 0 10px 10px 0;
+    float: right;
+    padding-left: 300px;
+    margin-top: -18px;
+}
+
+.box1 .menu
+{
+    width: 80px;
+    height: 92vh;
+    background-color:#5d61f0;
+    border-radius: 40px;
+    float: left;
+    padding-left: 120px;
+    margin-left: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.box1 .menu div:hover
+{
+    background-color:#a0a2f7;
+    transform: scale(1.2);
+}
+
+
+.box1 .menu div:active 
+{
+    transform: scale(1.2);
+}
+
+.box1 .menu .home
+{
+    width:50px;
+    height: 50px;
+    float: left;
+    margin-top: 110px;
+    margin-left: -85px;
+    border-radius: 12px;
+}
+
+.box1 .menu .home i
+{
+   margin-top:25px;
+   margin-left: 7px;
+}
+
+.box1 .menu .agenda
+{
+    width:50px;
+    height: 50px;
+    float: left;
+    margin-top: 250px;
+    margin-left: -85px;
+    border-radius: 12px;
+}
+
+.box1 .menu .agenda i
+{
+   margin-top:25px;
+   margin-left: 10px;
+}
+
+.box1 .menu .user
+{
+    width:50px;
+    height: 50px;
+    float: left;
+    margin-top: 390px;
+    margin-left: -85px;
+    border-radius: 12px;
+}
+
+.box1 .menu .user i
+{
+   margin-top:25px;
+   margin-left: 8px;
+}
+
+.box1 .menu .log
+{
+    width:50px;
+    height: 50px;
+    float: left;
+    margin-top: 530px;
+    margin-left: -85px;
+    border-radius: 12px;
+}
+
+
+.box1 .menu .log i
+{
+    margin-top:25px;
+    margin-left: 8px;
+}
+
+.box4
+{
+    width: 280px;
+    height: 200px;
+    background-color: #5d61f0;
+    border-radius: 15px;
+    float: right;
+    position: absolute;
+    top: 82%;
+    left: 80%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.chart-container 
+{
+    width: 80%;
+    max-width: 600px; /* Set the maximum width as per your requirement */
+    height: 100%;
+}
+
+.box1 #dashboard
+{
+    float: left;
+    padding-left: 230px;
+    position: absolute;
+    top: 78px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.box1 #search
+{
+    border: 2px solid #5d61f0 ;
+    border-radius: 15px;
+    width: 120px;
+    height: 30px;
+    margin-left: 880px;
+    position: absolute;
+    top: 80px;
+    padding-left: 25px;
+    padding-right: 15px;
+}
+
+.box1 .entete
+{
+    width: 50%;
+    height: 100px;
+    background-color: #5d61f0;
+    border-radius: 35px;
+    float:left;
+    position: absolute;
+    top: 25%;
+    left: 19.5%;
+}
+
+.box1 .entete .docteur
+{
+    width:100px;
+    height: 140px;
+    float: left;
+    margin-top: -40px;
+    margin-left: 30px;
+}
+
+.box1 .entete h2
+{
+    font-family:Georgia, Times, serif;
+    color: white;
+    margin: 15px 200px;
+    text-align: center;
+}
+
+.box1 .entete p
+{
+    font-family:Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    margin: 15px 200px;
+    text-align: center;
+}
+
+.box1 .entete .dessin
+{
+    width:80px;
+    height: 80px;
+    float: right;
+    margin-top: -88px;
+    margin-right: 30px;
+}
+
+
+.box1 .box6
+{
+    background-color: #343965;
+    width: 120px;
+    height: 160px;
+    border-radius: 15px;
+    float: left;
+    flex-direction: column;
+    grid-template-columns: auto(5,1fr);
+    margin: 260px 20px;
+    position: relative;
+    left: 5.44%;
+}
+
+.box1 .box7
+{
+    width: 50%;
+    height: 200px;
+    background-color: #343965;
+    border-radius: 15px;
+    float:left;
+    position: absolute;
+    top: 72%;
+    left: 19.5%;
+}
+
+.box1 .box6 .patient
+{
+    background-color: #585ceb;
+    width:55px;
+    height: 55px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 33px;
+    border-radius: 17px;
+}
+
+.box1 .box6 .patient i
+{
+    margin-top:25px;
+    margin-left: 14px;
+}
+
+.box1 .box6 .consultation
+{
+    background-color:#6ad8e8;
+    width:55px;
+    height: 55px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 33px;
+    border-radius: 17px;
+}
+
+.box1 .box6 .consultation i
+{
+    margin-top:25px;
+    margin-left: 13px;
+}
+
+.box1 .box6 .medecin
+{
+    background-color: #f9577e;
+    width:55px;
+    height: 55px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 33px;
+    border-radius: 17px;
+}
+
+.box1 form button
+{
+    position: relative;
+    left: 886px;
+    top:25px;
+    background: transparent;
+    border: none;
+    width: max-content;
+}
+
+.box1 .box6 .medecin i
+{
+    margin-top:27px;
+    margin-left: 10px;
+}
+
+.box1 .box6 .hospitalise
+{
+    background-color: #4d88f9;
+    width:55px;
+    height: 55px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 33px;
+    border-radius: 17px;
+}
+
+.box1 .box6 .hospitalise i
+{
+    margin-top:25px;
+    margin-left: 8px;
+}
+
+.box1 .box6 #add i
+{
+    width:100%;
+    height: 160px;
+    float: left;
+    border-radius: 17px;
+}
+
+.box1 .box6 #add
+{
+    margin-top:74px;
+    margin-left: 45px;
+    color: #585ceb;
+}
+
+.box1 .box6 #menu 
+{
+	position: absolute;
+	width: 150px;
+    height: 170px;
+    right: 1300px;
+    top:-10px;
+    font-weight: bold;
+    list-style: none;
+    background-color: #595dec;
+    color: white;
+    border-radius: 15px;
+}
+
+.box1 .box6 #menu a
+{
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+.box1 .box6 #menu li
+{
+    padding: 10px;
+}
+
+.box1 .box6 #menu i
+{
+    float: left;
+    position: absolute;
+    margin-left: 120px;
+    bottom: 140px;
+}
+
+.box1 .box6 #border
+{
+    border: 2px dashed #585ceb;
+    height: 160px;
+    border-radius: 15px;
+}
+
+
+.box1 .box6 p
+{
+    margin-top: 30px;
+    color: white;
+}
+
+
+.box2 #vector
+{
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    right: 150px;
+    top: 140px;
+    border: 5px solid #595dd2;
+    padding: 4px;
+    border-radius: 50%;
+    border-top-color: transparent;
+    border-right-style: hidden;
+}
+
+.box2 h4
+{
+    position: absolute;
+    width: 160px;
+    right: 150px;
+    top: 300px;
+    text-align: left;
+    color: white;
+}
+
+.box1 h5
+{
+    position: absolute;
+    width: 160px;
+    right: 1060px;
+    top: 290px;
+    text-align: left;
+    color: white;
+}
+
+
+.box2 a
+{
+    position:absolute;
+    color: white;
+    top: 300px;
+    text-align: left;
+    right: 75px;
+    text-decoration: none;
+    color: #595dd2;
+}

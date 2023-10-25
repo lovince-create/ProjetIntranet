@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/patient.css">
+    <title>Formulaire Patient</title>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <!-- Formulaire d'information du patient -->
+            <h1>Formulaire D'Information Patient</h1>
+
+            <label for="ID_patient"><b>ID</b></label>
+            <input type="number" placeholder="" name="ID_patient" required>
+
+            <label for="Nom_patient"><b>Nom</b></label>
+            <input type="text" placeholder="" name="Nom_patient" required>
+
+            <label for="Prenom_patient"><b>Prenom</b></label>
+            <input type="text" placeholder="" name="Prenom_patient" required>
+
+            <label for="DateNais_patient"><b>Date de naissance</b></label>
+            <input type="date" placeholder="" name="DateNais_patient" required>
+
+            <label for="Genre_patient"><b>Genre</b></label>
+            <input type="radio" name="Genre_patient" value="Homme" required>Homme
+            <input type="radio" name="Genre_patient" value="Femme" required>Femme
+            <input type="radio" name="Genre_patient" value="Autre" required>Autre
+
+            <br>
+
+            <label for="Statut_patient"><b>Statut familial</b></label>
+            <input type="radio" name="Statut_patient" value="Marie" required>Marie
+            <input type="radio" name="Statut_patient" value="Celibataire" required>Celibataire
+            <input type="radio" name="Statut_patient" value="Engage" required>Engage
+
+            <br>
+
+            <label for="Gsang_patient"><b>Groupe sanguin</b></label>
+            <input type="radio" name="Gsang_patient" value="O" required>O
+            <input type="radio" name="Gsang_patient" value="A" required>A
+            <input type="radio" name="Gsang_patient" value="B" required>B
+            <input type="radio" name="Gsang_patient" value="AB" required>AB
+
+            <br>
+
+            <label for="Telephone_patient"><b>Telephone</b></label>
+            <input type="tel" placeholder="" name="Telephone_patient" required>
+
+            <label for="Adresse_patient"><b>Adresse</b></label>
+            <input type="text" placeholder="" name="Adresse_patient" required>
+
+            <label for="MedecinSuivi"><b>Medecin suivi</b></label>
+            <input type="text" placeholder="" name="MedecinSuivi" required>
+
+            <div class="action">
+                <a href="acceuil.html" class="bouton">Retour</a>
+                <button type="submit" class="bouton" name="enregistrer" value="envoyer">Enregistrer</button>
+            </div>
+        
+        </form>
+    </div>
+</body>
+</html>

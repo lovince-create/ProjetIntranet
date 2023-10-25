@@ -1,0 +1,73 @@
+root {
+	--Dgreen: #3a8032;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1a6032;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 450px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: white;
+}
+
+form h1 {
+    font-weight: 500;
+    text-align: center;
+    color: #3a8032;
+}
+
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input[type="number"],
+input[type="time"] {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #1a6032;
+    border-radius: 5px;
+}
+
+.bouton {
+    width: 100%;
+    padding: 10px;
+    background-color: #1a6032;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    border: none;
+}
+
+.bouton:hover {
+    background-color: white;
+    color: #1a6032;
+    border: 3px solid #1a6032;
+}
+
+
+.action {
+    display: flex;
+    gap:50%;
+}
